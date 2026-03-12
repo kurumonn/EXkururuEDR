@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "exkururu-edr"
+version = "0.1.0"
+description = "Lightweight EDR normalizer for common_security_event_v1"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "kurumonn" }]
+dependencies = ["PyYAML>=6.0"]
+
+[project.scripts]
+exkururu-edr-normalize = "exkururuedr.cli:main"
+exkururu-edr-auth-check = "exkururuedr.auth_cli:main"
+exkururu-edr-agent = "exkururuedr.agent_cli:main"
+exkururu-edr-standalone = "exkururuedr.standalone_server:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

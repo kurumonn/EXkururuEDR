@@ -1,0 +1,14 @@
+{
+  "sources": [
+    {
+      "source_id": "edr-agent-01",
+      "secret": "replace-with-shared-secret",
+      "enabled": true
+    },
+    {
+      "source_id": "edr-agent-disabled",
+      "secret": "replace-with-disabled-secret",
+      "enabled": false
+    }
+  ]
+}

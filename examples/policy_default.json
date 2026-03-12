@@ -1,0 +1,9 @@
+{
+  "title": "edr-balanced-v1",
+  "policy": {
+    "response_dry_run": true,
+    "max_spool_files": 2000,
+    "collector_interval_sec": 60,
+    "rule_file": "/home/kurumonn/exkururuEDR/examples/local_rules.yml"
+  }
+}

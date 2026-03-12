@@ -1,0 +1,25 @@
+version: "1.0"
+rules:
+  - rule_id: "EDR-RULE-001"
+    name: "Persistence high block"
+    enabled: true
+    categories: ["persistence"]
+    severities: ["high", "critical"]
+    min_score: 70
+    action: "block"
+    reason: "persistence_high"
+
+  - rule_id: "EDR-RULE-002"
+    name: "Network summary challenge"
+    enabled: true
+    categories: ["network"]
+    min_score: 40
+    action: "challenge"
+    reason: "network_summary_challenge"
+
+  - rule_id: "EDR-RULE-003"
+    name: "Default observe for collector summaries"
+    enabled: true
+    labels_contains: ["collector", "summary"]
+    action: "observe"
+    reason: "collector_observe"

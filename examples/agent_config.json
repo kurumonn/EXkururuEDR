@@ -1,0 +1,19 @@
+{
+  "agent_id": "edr-agent-01",
+  "workspace": "kurumonn-ops",
+  "spool_dir": "/home/kurumonn/exkururuEDR/data/spool",
+  "log_dir": "/home/kurumonn/exkururuEDR/data/logs",
+  "heartbeat_sec": 30,
+  "max_spool_files": 2000,
+  "response_dry_run": true,
+  "quarantine_dir": "/home/kurumonn/exkururuEDR/data/quarantine",
+  "allow_kill_processes": ["malware-sample"],
+  "xdr_base_url": "http://127.0.0.1:8810",
+  "xdr_source_key": "edr-lab-01",
+  "xdr_source_token": "replace-me",
+  "xdr_timeout_sec": 5,
+  "xdr_batch_path": "/api/v1/events/batch",
+  "xdr_single_path": "/api/v1/events/single",
+  "xdr_policy_path": "/api/v1/policy/current",
+  "xdr_ack_path": "/api/v1/events/single"
+}

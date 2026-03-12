@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+
+# Virtual env
+.venv/
+venv/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Local benchmark outputs
+docs/*.json
+docs/*.jsonl
+data/
+
+# Keep public contract docs tracked
+!docs/auth_shared_secret_contract.md
+
+# Rust (agent-lite)
+agent-lite/target/
+rust_rule_bench/target/

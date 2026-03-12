@@ -1,0 +1,6 @@
+event_id,event_type,category,severity,hostname,user,src_ip,dst_ip
+e-001,SUSPICIOUS_PROCESS,process,high,host-a,alice,10.10.0.10,198.51.100.10
+e-002,SUSPICIOUS_FILE_WRITE,file,medium,host-a,alice,10.10.0.10,198.51.100.11
+e-003,SUSPICIOUS_NETWORK,network,high,host-b,bob,10.10.0.11,198.51.100.12
+e-004,PERSISTENCE_AUTORUN,persistence,critical,host-c,charlie,10.10.0.12,198.51.100.13
+e-005,SUSPICIOUS_PROCESS,process,low,host-d,dana,10.10.0.13,198.51.100.14

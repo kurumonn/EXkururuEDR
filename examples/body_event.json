@@ -1,0 +1,6 @@
+{
+  "event_type": "SUSPICIOUS_PROCESS",
+  "severity": "high",
+  "hostname": "edge-node-01",
+  "user": "alice"
+}

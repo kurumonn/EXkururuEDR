@@ -1,12 +1,11 @@
-# 4-Stack Demo Note
+# 4製品デモ概要
 
-This repository provides the EDR role in the EXkururu 4-stack demo.
+このリポジトリは、EXkururu 4製品デモにおける EDR の役割を担当します。
 
-The public repository documents only the high-level path:
+公開リポジトリでは、デモの高レベルな流れだけを記載しています。
 
-1. Endpoint signals are collected and normalized
-2. Normalized events are exported to XDR
-3. XDR and SOC consume the resulting signals downstream
+1. エンドポイントシグナルを収集して正規化する
+2. 正規化イベントを XDR へ送信する
+3. XDR と SOC が下流でそれを利用する
 
-Environment-specific bootstrap values, source tokens, and rollout payloads are intentionally kept outside the
-public repository.
+環境固有の起動値、source token、ロールアウト用ペイロードは公開リポジトリ外で管理します。
